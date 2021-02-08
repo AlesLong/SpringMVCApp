@@ -18,7 +18,7 @@ public class FirstController {
                             @RequestParam(value = "surname", required = false) String surname,
                             Model model) {
         //System.out.println("Hello, " + name + surname);
-        model.addAttribute("message", "Hello, " + name + surname);
+        model.addAttribute("message", "Hello, " + name +" " + surname);
         return "first/hello";
     }
 
